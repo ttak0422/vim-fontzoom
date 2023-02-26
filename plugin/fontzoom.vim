@@ -3,7 +3,7 @@
 " Author : thinca <thinca+vim@gmail.com>
 " License: zlib License
 
-if exists('g:loaded_fontzoom') || !has('gui_running')
+if exists('g:loaded_fontzoom') || (!has('gui_running') && !exists('g:gonvim_running'))
   finish
 endif
 let g:loaded_fontzoom = 1
